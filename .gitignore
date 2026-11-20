@@ -24,3 +24,6 @@ dist/
 # Logs
 *.log
 npm-debug.log*
+
+# MD
+page-guide.md
