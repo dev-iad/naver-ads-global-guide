@@ -187,3 +187,23 @@ footer p + p { margin-top: 6px; }
   .band { padding: 40px 20px; border-radius: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Contact form */
+.contact { max-width: 680px; margin: 0 auto; display: grid; gap: 18px; }
+.contact .row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.contact label { display: grid; gap: 6px; font-weight: 600; font-size: .92rem; }
+.contact .opt { font-weight: 400; color: var(--ink-2); }
+.contact input, .contact select, .contact textarea {
+  width: 100%; font: inherit; font-weight: 400; color: var(--ink);
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+}
+.contact textarea { resize: vertical; }
+.contact input:focus, .contact select:focus, .contact textarea:focus {
+  outline: 2px solid var(--brand); outline-offset: 1px; border-color: var(--brand);
+}
+.contact .btn { cursor: pointer; justify-self: start; font: inherit; font-weight: 700; }
+.contact .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+@media (max-width: 640px) {
+  .contact .row { grid-template-columns: 1fr; }
+  .contact .btn { justify-self: stretch; }
+}

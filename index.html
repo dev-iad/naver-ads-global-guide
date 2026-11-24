@@ -21,6 +21,7 @@
       <a href="#steps">Get Started</a>
       <a href="#tips">Pro Tips</a>
       <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
       <a class="btn sm" href="#start">Start Now</a>
     </nav>
   </div>
@@ -155,6 +156,43 @@
         <p>Follow this guide and set up a campaign in about 10 minutes.</p>
         <a class="btn" href="https://searchad.naver.com" target="_blank" rel="noopener">Go to Naver Search Ads ↗</a>
       </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="tag">CONTACT</span>
+        <h2>Have a question? Get in touch</h2>
+        <p>Tell us about your business and goals. We'll get back to you by email.</p>
+      </div>
+      <form class="contact" action="https://formspree.io/f/xjgeeepd" method="POST">
+        <div class="row">
+          <label>Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+        </div>
+        <label>Company / Website <span class="opt">(optional)</span>
+          <input type="text" name="company" autocomplete="organization">
+        </label>
+        <label>Inquiry type
+          <select name="topic">
+            <option>General question</option>
+            <option>Account setup</option>
+            <option>Keywords &amp; bidding</option>
+            <option>Campaign review</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <button class="btn" type="submit">Send Message →</button>
+      </form>
     </div>
   </section>
 </main>
