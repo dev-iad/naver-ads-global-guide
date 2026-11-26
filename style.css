@@ -207,3 +207,33 @@ footer p + p { margin-top: 6px; }
   .contact .row { grid-template-columns: 1fr; }
   .contact .btn { justify-self: stretch; }
 }
+
+/* Blog post */
+.post { max-width: 760px; margin: 0 auto; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 40px 36px; }
+.post-head { margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.post-meta { display: flex; align-items: center; gap: 12px; font-size: .85rem; color: var(--ink-2); margin-bottom: 12px; }
+.pill { background: var(--brand-soft); color: var(--brand-dark); font-weight: 700; padding: 3px 12px; border-radius: 999px; }
+@media (prefers-color-scheme: dark) { .pill { color: var(--brand); } }
+.post h3 { font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.35; margin-bottom: 10px; }
+.post-head p { color: var(--ink-2); }
+.post h4 { font-size: 1.12rem; margin: 28px 0 8px; }
+.post p { margin-bottom: 10px; }
+.post ol, .post ul { margin: 0 0 12px 22px; }
+.post li { margin-bottom: 6px; }
+.post li::marker { color: var(--brand); font-weight: 700; }
+.note { background: var(--brand-soft); border-left: 4px solid var(--brand); border-radius: 10px; padding: 16px 20px; margin-top: 16px; }
+.note p { margin-bottom: 6px; }
+.note .fine { font-size: .85rem; color: var(--ink-2); margin-bottom: 0; }
+@media (max-width: 640px) { .post { padding: 26px 20px; } }
+
+/* Blog list & post page */
+.post-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+.post-card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.post-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--brand); }
+.post-card h3 { font-size: 1.2rem; line-height: 1.4; margin-bottom: 8px; }
+.post-card p { color: var(--ink-2); font-size: .95rem; margin-bottom: 14px; }
+.post-card .more { color: var(--brand-dark); font-weight: 700; font-size: .92rem; }
+@media (prefers-color-scheme: dark) { .post-card .more { color: var(--brand); } }
+.back { max-width: 760px; margin: 0 auto 16px; font-weight: 600; }
+.back a { color: var(--brand-dark); }
+@media (prefers-color-scheme: dark) { .back a { color: var(--brand); } }
